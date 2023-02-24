@@ -2,7 +2,7 @@
 //document.title="moj prvi sajt"
 //console.dir(document.all)
 //console.log (document.all(6))
-let lis=document.getElementById("items")
+let list=document.getElementById("items")
 //console.log(listitems)
 let items=document.getElementsByClassName("list-items")
 items[2].textContent = "paraglajder" 
@@ -43,17 +43,26 @@ container.style.backgroundColor="purple"
 //query selector
 
 let drugiLink=document.querySelector(".link-item")
-console.log(drugiLink)
+//console.log(drugiLink)
 
 
 
 //query selecor all
 let lista=document.querySelector(".list-item");
-console.log(lista)
+//console.log(lista)
 
 
-
+/*
 
 Items[3].textContent="cetiri"
+.previousElemenSibling.style.color = "brown"
+
+log(listItem.nextElemenSibling);
 
 
+console.log(listItems.previousElemenSibling);
+console.log(listItems.previousElementChild)
+*/
+let drugiElement = document.getElementsByClassName("list-items")[1];
+
+drugiElement.parentElement.previousElementSibling.style.color = "cyan"
